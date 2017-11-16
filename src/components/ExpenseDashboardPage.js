@@ -1,17 +1,14 @@
-// @flow
 
 import React from "react";
+import ExpenseList from './ExpenseList';
+import ExpenseListFilters from './ExpenseListFilters';
 
 const ExpenseDashboardPage = () => {
-  
-  function square(n : number) : number {
-    return n * n;
-  }
 
-  square(2);
   return (
     <div>
-      <h2>Home Page</h2>
+      <ExpenseListFilters />
+      <ExpenseList />
     </div>
   );
 };
