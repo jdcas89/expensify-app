@@ -1,38 +1,20 @@
 import uuid from "uuid";
+import * as types from './actionTypes';
 
-// ADD_EXPENSE
-export const addExpense = (
-  { description = "", 
-  note = "", 
-  amount = 0, 
-  createdAt = 0 
-  } = {}
-) => ({
-  type: "ADD_EXPENSE",
-  expense: {
-    id: uuid(),
-    description,
-    note,
-    amount,
-    createdAt
-  }
+
+
+export const addExpense = ({ description = "", note = "", amount = 0, createdAt = 0 } = {}) => ({ 
+  type: types.ADD_EXPENSE, 
+  expense: { id: uuid(), description, note, amount, createdAt } 
 });
 
-
-// REMOVE_EXPENSE
-
 export const removeExpense = ({ id }) => ({
-  type: 'REMOVE_EXPENSE',
+  type: types.REMOVE_EXPENSE,
   id
 });
 
-
-// EDIT_EXPENSE
-
 export const editExpense = (id, updates) => ({
-  type: 'EDIT_EXPENSE',
+  type: types.EDIT_EXPENSE,
   id,
   updates
 });
-
-

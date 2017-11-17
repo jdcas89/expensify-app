@@ -7,7 +7,8 @@
   "scripts": {
     "serve": "webpack --watch",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "test":"jest --watch"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -16,6 +17,7 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "^0.28.7",
+    "jest": "^21.2.1",
     "live-server": "^1.2.0",
     "moment": "^2.19.2",
     "node-sass": "^4.6.0",
