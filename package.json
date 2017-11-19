@@ -8,7 +8,7 @@
     "serve": "webpack --watch",
     "build": "webpack",
     "dev-server": "webpack-dev-server",
-    "test":"jest --watch"
+    "test": "jest --watch"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -29,6 +29,7 @@
     "react-modal": "^3.1.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-test-renderer": "^16.1.1",
     "redux": "^3.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
