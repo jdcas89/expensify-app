@@ -25,7 +25,7 @@ exports[`should render the ExpenseListItem 1`] = `
       Amount: 
     </strong>
      
-    195
+    $1.95
   </p>
   <p>
     <strong>
