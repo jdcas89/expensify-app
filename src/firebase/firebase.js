@@ -13,6 +13,17 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
+database.ref('expenses').on('child_removed', (snapshot)=>{
+  console.log(snapshot.key, snapshot.val())
+})
+
+database.ref('expenses').on('child_changed', (snapshot)=>{
+  console.log(snapshot.key, snapshot.val())
+})
+//this also runs for all data existing
+database.ref('expenses').on('child_added', (snapshot)=>{
+  console.log(snapshot.key, snapshot.val())
+})
 const expenses = [
   {
     description: 'Gum',
@@ -34,13 +45,34 @@ const expenses = [
   } 
 ]
 
-database.ref('expenses').push(expenses[0])
-database.ref('expenses').push(expenses[1])
-database.ref('expenses').push(expenses[2])
+ database.ref('expenses').push(expenses[0])
+// database.ref('expenses').push(expenses[1])
+// database.ref('expenses').push(expenses[2])
 
 
+// database.ref('expenses').once('value')
+//   .then((snapshot) => {
+//     let expenses = [];
+//     snapshot.forEach((childSnapshot) => {
+//       expenses.push({
+//         id:childSnapshot.key,
+//         ...childSnapshot.val()
+//       })
+//     })
 
+//     console.log(expenses);
+//   })
 
+  // database.ref('expenses').on('value', (snapshot) => {
+  //   let expenses = [];
+  //   snapshot.forEach((childSnapshot) => {
+  //     expenses.push({
+  //       id:childSnapshot.key,
+  //       ...childSnapshot.val()
+  //     })
+  //   })
+  //   console.log(expenses);
+  // })
 
 
 //adding data
@@ -81,11 +113,11 @@ database.ref('expenses').push(expenses[2])
 
 //subscribe
 //
-const onValueChange = database.ref().on('value', (snapshot) => {
-  console.log(snapshot.val())
-}, (e) => {
-  console.log('Error: '. e)
-})
+// const onValueChange = database.ref().on('value', (snapshot) => {
+//   console.log(snapshot.val())
+// }, (e) => {
+//   console.log('Error: '. e)
+// })
 // to turn off subscribe
 // database.ref().off(onValueChange)
 
@@ -97,12 +129,12 @@ const onValueChange = database.ref().on('value', (snapshot) => {
 // manipulating a unique entry to the array
 // database.ref('notes/UNIQUEID')
 
-const successfulSave = () => {
-  console.log('Data is updated')
-}
+// const successfulSave = () => {
+//   console.log('Data is updated')
+// }
 
-const failedSave = (e) => {
-  console.log('Data failed to sync. '. e)
-}
+// const failedSave = (e) => {
+//   console.log('Data failed to sync. '. e)
+// }
 
 // database.ref('location/city').set('test')
