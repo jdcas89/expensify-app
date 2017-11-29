@@ -12,20 +12,28 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-database.ref().set({
-  name: 'J.C.',
-  location:{
-    city: 'World',
-    country:'Universe'
-  }
-}).then(() =>{
-  successfulSave()
-}).catch((e) => {
-  failedSave();
-})
+// database.ref().set({
+//   name: 'J.C.',
+//   location:{
+//     city: 'World',
+//     country:'Universe'
+//   }
+// }).then(() =>{
+//   successfulSave()
+// }).catch((e) => {
+//   failedSave();
+// })
+
+// database.ref('location/country').set(null);
+
+// database.ref('location/city').remove().then(() => {
+//   successfulSave()
+// }).catch((e) => {
+//   failedSave(e)
+// })
 
 const successfulSave = () => {
-  console.log('Data is saved')
+  console.log('Data is updated')
 }
 
 const failedSave = (e) => {
