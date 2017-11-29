@@ -1,6 +1,8 @@
 import * as firebase from 'firebase';
 import moment from 'moment';
 
+// https://firebase.google.com/docs/reference/js/
+
 const config = {
   apiKey: "AIzaSyB6_W5V2gDNyM6CFpp_kNdEfs9AkqVV4T8",
   authDomain: "expensify-28fc5.firebaseapp.com",
@@ -44,7 +46,7 @@ const expenses = [
     createdAt: moment(0).add(4, 'day').valueOf()
   } 
 ]
-
+//https://firebase.google.com/docs/reference/js/
  database.ref('expenses').push(expenses[0])
 // database.ref('expenses').push(expenses[1])
 // database.ref('expenses').push(expenses[2])
