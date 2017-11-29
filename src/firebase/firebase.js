@@ -1,4 +1,5 @@
 import * as firebase from 'firebase';
+import moment from 'moment';
 
 const config = {
   apiKey: "AIzaSyB6_W5V2gDNyM6CFpp_kNdEfs9AkqVV4T8",
@@ -11,6 +12,36 @@ const config = {
 firebase.initializeApp(config);
 
 const database = firebase.database();
+
+const expenses = [
+  {
+    description: 'Gum',
+    note:'Biology',
+    amount:195,
+    createdAt: 0
+  },
+  {
+    description: 'Rent',
+    note:'September',
+    amount:3000,
+    createdAt: moment(0).subtract(4, 'day').valueOf()
+  }, 
+  {
+    description: 'Credit card',
+    note:'',
+    amount:4000,
+    createdAt: moment(0).add(4, 'day').valueOf()
+  } 
+]
+
+database.ref('expenses').push(expenses[0])
+database.ref('expenses').push(expenses[1])
+database.ref('expenses').push(expenses[2])
+
+
+
+
+
 
 //adding data
 // database.ref().set({
@@ -57,6 +88,14 @@ const onValueChange = database.ref().on('value', (snapshot) => {
 })
 // to turn off subscribe
 // database.ref().off(onValueChange)
+
+//adding unique values
+// database.ref('notes').push({
+//   note: 'Testing'
+// })
+
+// manipulating a unique entry to the array
+// database.ref('notes/UNIQUEID')
 
 const successfulSave = () => {
   console.log('Data is updated')
