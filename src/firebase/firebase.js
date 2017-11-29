@@ -12,6 +12,7 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
+//adding data
 // database.ref().set({
 //   name: 'J.C.',
 //   location:{
@@ -24,6 +25,7 @@ const database = firebase.database();
 //   failedSave();
 // })
 
+//removing data
 // database.ref('location/country').set(null);
 
 // database.ref('location/city').remove().then(() => {
@@ -31,6 +33,30 @@ const database = firebase.database();
 // }).catch((e) => {
 //   failedSave(e)
 // })
+
+//updating data
+
+// database.ref().update({
+//   name: 'Annonymous',
+//   'location/city':'newCity',
+//   job: 'Software developer'
+// })
+
+//fetching data
+
+// database.ref().once('value').then((snapshot) => {
+//   console.log(snapshot.val())
+// })
+
+//subscribe
+//
+const onValueChange = database.ref().on('value', (snapshot) => {
+  console.log(snapshot.val())
+}, (e) => {
+  console.log('Error: '. e)
+})
+// to turn off subscribe
+// database.ref().off(onValueChange)
 
 const successfulSave = () => {
   console.log('Data is updated')
