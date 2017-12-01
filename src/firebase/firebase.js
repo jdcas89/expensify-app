@@ -15,39 +15,41 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-database.ref('expenses').on('child_removed', (snapshot)=>{
-  console.log(snapshot.key, snapshot.val())
-})
+export {firebase, database as default };
 
-database.ref('expenses').on('child_changed', (snapshot)=>{
-  console.log(snapshot.key, snapshot.val())
-})
-//this also runs for all data existing
-database.ref('expenses').on('child_added', (snapshot)=>{
-  console.log(snapshot.key, snapshot.val())
-})
-const expenses = [
-  {
-    description: 'Gum',
-    note:'Biology',
-    amount:195,
-    createdAt: 0
-  },
-  {
-    description: 'Rent',
-    note:'September',
-    amount:3000,
-    createdAt: moment(0).subtract(4, 'day').valueOf()
-  }, 
-  {
-    description: 'Credit card',
-    note:'',
-    amount:4000,
-    createdAt: moment(0).add(4, 'day').valueOf()
-  } 
-]
+// database.ref('expenses').on('child_removed', (snapshot)=>{
+//   console.log(snapshot.key, snapshot.val())
+// })
+
+// database.ref('expenses').on('child_changed', (snapshot)=>{
+//   console.log(snapshot.key, snapshot.val())
+// })
+// //this also runs for all data existing
+// database.ref('expenses').on('child_added', (snapshot)=>{
+//   console.log(snapshot.key, snapshot.val())
+// })
+// const expenses = [
+//   {
+//     description: 'Gum',
+//     note:'Biology',
+//     amount:195,
+//     createdAt: 0
+//   },
+//   {
+//     description: 'Rent',
+//     note:'September',
+//     amount:3000,
+//     createdAt: moment(0).subtract(4, 'day').valueOf()
+//   }, 
+//   {
+//     description: 'Credit card',
+//     note:'',
+//     amount:4000,
+//     createdAt: moment(0).add(4, 'day').valueOf()
+//   } 
+// ]
 //https://firebase.google.com/docs/reference/js/
- database.ref('expenses').push(expenses[0])
+// database.ref('expenses').push(expenses[0])
 // database.ref('expenses').push(expenses[1])
 // database.ref('expenses').push(expenses[2])
 
