@@ -59,24 +59,24 @@ exports[`should render ExpenseForm correctly 1`] = `
           "dateIsUnavailable": [Function],
           "enterKey": "Enter key",
           "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+          "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
           "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
+          "jumpToNextMonth": "Move forward to switch to the next month",
+          "jumpToPrevMonth": "Move backward to switch to the previous month",
           "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
           "keyboardShortcuts": "Keyboard Shortcuts",
           "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
+          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+          "moveFocusByOneMonth": "Switch months",
+          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+          "openThisPanel": "Open this panel",
           "pageUpPageDown": "page up and page down keys",
           "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+          "returnFocusToInput": "Return to the date input field",
+          "selectFocusedDate": "Select the date in focus",
+          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
           "upArrowDownArrow": "up and down arrow keys",
         }
       }
@@ -90,7 +90,6 @@ exports[`should render ExpenseForm correctly 1`] = `
       screenReaderInputMessage=""
       showClearDate={false}
       showDefaultInputIcon={false}
-      verticalHeight={null}
       weekDayFormat="dd"
       withFullScreenPortal={false}
       withPortal={false}
@@ -166,24 +165,24 @@ exports[`should render ExpenseForm with expense data 1`] = `
           "dateIsUnavailable": [Function],
           "enterKey": "Enter key",
           "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+          "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
           "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
+          "jumpToNextMonth": "Move forward to switch to the next month",
+          "jumpToPrevMonth": "Move backward to switch to the previous month",
           "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
           "keyboardShortcuts": "Keyboard Shortcuts",
           "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
+          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+          "moveFocusByOneMonth": "Switch months",
+          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+          "openThisPanel": "Open this panel",
           "pageUpPageDown": "page up and page down keys",
           "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+          "returnFocusToInput": "Return to the date input field",
+          "selectFocusedDate": "Select the date in focus",
+          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
           "upArrowDownArrow": "up and down arrow keys",
         }
       }
@@ -197,7 +196,6 @@ exports[`should render ExpenseForm with expense data 1`] = `
       screenReaderInputMessage=""
       showClearDate={false}
       showDefaultInputIcon={false}
-      verticalHeight={null}
       weekDayFormat="dd"
       withFullScreenPortal={false}
       withPortal={false}
@@ -273,24 +271,24 @@ exports[`should render error for invalid form submit 1`] = `
           "dateIsUnavailable": [Function],
           "enterKey": "Enter key",
           "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+          "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
           "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
+          "jumpToNextMonth": "Move forward to switch to the next month",
+          "jumpToPrevMonth": "Move backward to switch to the previous month",
           "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
           "keyboardShortcuts": "Keyboard Shortcuts",
           "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
+          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+          "moveFocusByOneMonth": "Switch months",
+          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+          "openThisPanel": "Open this panel",
           "pageUpPageDown": "page up and page down keys",
           "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+          "returnFocusToInput": "Return to the date input field",
+          "selectFocusedDate": "Select the date in focus",
+          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
           "upArrowDownArrow": "up and down arrow keys",
         }
       }
@@ -304,7 +302,6 @@ exports[`should render error for invalid form submit 1`] = `
       screenReaderInputMessage=""
       showClearDate={false}
       showDefaultInputIcon={false}
-      verticalHeight={null}
       weekDayFormat="dd"
       withFullScreenPortal={false}
       withPortal={false}
@@ -383,24 +380,24 @@ exports[`should render error for invalid form submit 2`] = `
           "dateIsUnavailable": [Function],
           "enterKey": "Enter key",
           "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+          "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
           "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
+          "jumpToNextMonth": "Move forward to switch to the next month",
+          "jumpToPrevMonth": "Move backward to switch to the previous month",
           "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
           "keyboardShortcuts": "Keyboard Shortcuts",
           "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
+          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+          "moveFocusByOneMonth": "Switch months",
+          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+          "openThisPanel": "Open this panel",
           "pageUpPageDown": "page up and page down keys",
           "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+          "returnFocusToInput": "Return to the date input field",
+          "selectFocusedDate": "Select the date in focus",
+          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
           "upArrowDownArrow": "up and down arrow keys",
         }
       }
@@ -414,7 +411,6 @@ exports[`should render error for invalid form submit 2`] = `
       screenReaderInputMessage=""
       showClearDate={false}
       showDefaultInputIcon={false}
-      verticalHeight={null}
       weekDayFormat="dd"
       withFullScreenPortal={false}
       withPortal={false}
