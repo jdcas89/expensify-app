@@ -29,8 +29,6 @@ const jsx = (
 
 ReactDOM.render(<p>Loading...</p>, document.getElementById("app"));
 
-
-
 firebase.auth().onAuthStateChanged((user) => {
   if(user){
     console.log(user);
