@@ -1,12 +1,16 @@
 //http://sass-lang.com/documentation/Sass/Script/Functions.html
-
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
 }
 body {
+  color: $dark-grey;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
   background-color: white;
+  line-height: 1.6;
 }
 
 button {
